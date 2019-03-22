@@ -6,7 +6,10 @@ var getWords = function(titles){
 	//  Filter out punctuation/numbers
 	//  Return words array
 	// -----------------------------------	
-
+	// console.log(titles)
+    var words = titles.map(function(item){
+		return item.match(/([A-Za-z]+)/g);
+	})
 	return words;
 }
 
